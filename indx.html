@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/Style.css">
+    </head>
+    <body>
+        <section class="loading position-fixed top-0 bottom-0 start-0 end-0 justify-content-center align-items-center">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </section>
+
+        <section class="sidenav position-fixed top-0 min-vh-100 d-flex">
+            <div class="left-side d-flex flex-column justify-content-between p-4">
+                <div class="navlinks">
+                    <ul class="list-unstyled">
+                        <li onclick="searchInput()" class="position-relative">Search</li>
+                        <li onclick="getCate()" class="position-relative">Categories</li>
+                        <li onclick="getArea()" class="position-relative">Area</li>
+                        <li onclick="getIngre()" class="position-relative">Ingredients</li>
+                        <li onclick="contact()" class="position-relative">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="navbottom">
+                    <div class="icon text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br> Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side d-flex flex-column justify-content-between text-center text-black py-4 px-2 bg-white">
+                <img src="logo.png" alt="">
+                <i class="fa-solid fa-xmark fa-3x button"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block pb-2"></i>
+                    <i class="fa-solid fa-share-nodes d-block"></i>
+                </div>
+            </div>
+        </section>
+
+        <div class="container" id="searchInput"></div>
+
+        <section class="home position-relative min-vh-100">
+            <div class="loading-in position-absolute top-0 bottom-0 start-0 end-0 justify-content-center align-items-center">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                  </div>
+            </div>
+            <div class="container">
+                <div class="row py-3 g-4" id="displayArray"></div>
+            </div>
+        </section>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
